@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    background-color: #FFF;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height:100%;
+    margin: auto;
+}
+.header-pushdown{
+    height: 10vh;
+}
+nav{
+    flex:1;
+}
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 18px;
+    color:#5f5f79;
+}
+.logo-container{
+  flex: 1;
+}
+.logo-container,.nav-links{
+    display: flex;
+}
+.home,.service-intro,.about{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+.service-intro{
+    flex-direction: column;
+}
+.home {
+    min-height: 90vh;
+}
+.introduction,.cover,.about-text{
+    flex:1;
+}
+
+.intro-text h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+.intro-text h2{
+    font-size: 60px;
+    font-weight: bold;
+    color:rgba(0, 0, 255, 0.687);
+    text-decoration: underline;
+}
+.intro-text h3{
+    font-size: 50px;
+    font-weight: bold;
+}
+.intro-text p {
+    font-size: 22px;
+    padding:10px 0px 0px 0px;
+}
+.centre-align-text{
+    text-align: center;
+}
+.cta{
+    padding:50px 0px 0px 0px;   
+}
+.cta button{
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 255, 0.687);
+    color: #fff;
+    height: 50px;
+    width:150px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+.about-services{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px 40px 0px;
+    gap: 30px;
+    width: 100%;
+}
+.service-card{
+   background: #d8f1fa;
+    display: flex;
+    justify-content: center;
+    height: 170px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 6px 8px 15px #ededed;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  .service-intro .cta{
+      padding: 50px 0px 50px 0px;
+  }
+  .about {
+      margin-top: 50px;
+      flex-direction: column;
+      align-items: unset;
+      gap: 30px;
+  }
+  .about-introduction{
+      display: flex;
+  }
+  footer{
+    margin-top: 50px;
+    height: 20vh;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.687);
+  }
+  
