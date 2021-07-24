@@ -25,9 +25,11 @@ header {
 nav{
     flex:1;
 }
+ul{
+    list-style: none;
+}
 .nav-links{
     justify-content: space-around;
-    list-style: none;
 }
 .nav-link{
     text-decoration: none;
@@ -40,7 +42,7 @@ nav{
 .logo-container,.nav-links{
     display: flex;
 }
-.home,.service-intro,.about{
+.home,.services-content,.about{
     display: flex;
     width: 90%;
     margin: auto;
@@ -51,45 +53,62 @@ nav{
 }
 .home {
     min-height: 90vh;
+    background-position: right;
+    background-image: url(./blob.svg);
+    background-repeat: no-repeat;
 }
-.introduction,.cover,.about-text{
-    flex:1;
+.introduction,.about-text{
+    flex:2;
+}
+.cover{
+    flex: 1;
 }
 
 .intro-text h1{
-    font-size: 80px;
+    font-size: 60px;
     font-weight: bold;
 }
 .intro-text h2{
-    font-size: 60px;
-    font-weight: bold;
-    color:rgba(0, 0, 255, 0.687);
-    text-decoration: underline;
-}
-.intro-text h3{
     font-size: 50px;
     font-weight: bold;
 }
+.intro-text h3{
+    font-size: 35px;
+    font-weight: 300;
+}
+.service-card h4{
+    font-size: 18px;
+    font-weight: 100;
+}
 .intro-text p {
-    font-size: 22px;
-    padding:10px 0px 0px 0px;
+    font-size: 15px;
+    padding:10px 0px 10px 0px;
 }
 .centre-align-text{
+    
     text-align: center;
+}
+button{
+    border: none;
+    height: 50px;
+    width:150px;
+    cursor: pointer;
+    font-size: 16px;
+
 }
 .cta{
     padding:50px 0px 0px 0px;   
 }
 .cta button{
     border: none;
-    border-radius: 25px;
     background-color: rgba(0, 0, 255, 0.687);
     color: #fff;
-    height: 50px;
-    width:150px;
-    cursor: pointer;
-    font-size: 16px;
 
+}
+.cta-outline button{
+    border:1px solid rgba(0, 0, 255, 0.687);
+    color:rgba(0, 0, 255, 0.687);
+    background-color: #fff;
 }
 .about-services{
     display: flex;
@@ -99,11 +118,14 @@ nav{
     width: 100%;
 }
 .service-card{
-   background: #d8f1fa;
+    background: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: 170px;
-    width: 60%;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    width: 80%;
     margin: auto;
     box-shadow: 6px 8px 15px #ededed;
 }
@@ -113,7 +135,6 @@ nav{
     flex-wrap: wrap;
     width: 100%;
   }
-  
   .column {
     display: flex;
     flex-direction: column;
@@ -124,18 +145,47 @@ nav{
       padding: 50px 0px 50px 0px;
   }
   .about {
-      margin-top: 50px;
+      margin-top: 30px;
       flex-direction: column;
       align-items: unset;
       gap: 30px;
   }
+  .about-section{
+    background-color: #fbfbfb;
+  }
   .about-introduction{
       display: flex;
   }
+  .about-text{
+    background-color: rgba(0, 0, 255, 0.687);
+    padding: 25px;
+    color: #fff;
+  }
+  .about-introduction .introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0px 50px 0px;
+    background: #e7f9ff;
+  } 
   footer{
     margin-top: 50px;
     height: 20vh;
     width: 100%;
     background-color: rgba(0, 0, 255, 0.687);
   }
-  
+  .services {
+    margin-top: 45px;
+    background: linear-gradient(to bottom, #e7f9ff 0%,#e7f9ff 40%,#fbfbfb 30%,#fbfbfb 50%,#fbfbfb 100%);
+    padding: 15px 0px 15px 0px;
+  }
+  .services-content{
+    flex-direction: column;
+  }
+  .service-card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
