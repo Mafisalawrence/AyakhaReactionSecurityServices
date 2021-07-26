@@ -5,12 +5,14 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    font-size: 14px;
 }
 header {
     width: 100%;
     height: 10vh;
     position: fixed;
     background-color: #FFF;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 15%);
 }
 .nav-container{
     display: flex;
@@ -28,6 +30,10 @@ nav{
 ul{
     list-style: none;
 }
+h3{
+    font-size: 1.85714286em;
+    font-weight: 700;
+}
 .nav-links{
     justify-content: space-around;
 }
@@ -42,7 +48,7 @@ ul{
 .logo-container,.nav-links{
     display: flex;
 }
-.home,.services-content,.about{
+section, .footer-container{
     display: flex;
     width: 90%;
     margin: auto;
@@ -51,25 +57,24 @@ ul{
 .service-intro{
     flex-direction: column;
 }
-.home {
+.cover {
     min-height: 90vh;
     background-position: right;
     background-image: url(./blob.svg);
     background-repeat: no-repeat;
 }
-.introduction,.about-text{
-    flex:2;
-}
 .cover{
     flex: 1;
 }
-
-.intro-text h1{
-    font-size: 60px;
+.intro-text{
+    border-bottom: 2px solid rgba(0, 0, 255, 0.687);
+}
+h1{
+    font-size: 55px;
     font-weight: bold;
 }
-.intro-text h2{
-    font-size: 50px;
+ h2{
+    font-size: 45px;
     font-weight: bold;
 }
 .intro-text h3{
@@ -80,9 +85,12 @@ ul{
     font-size: 18px;
     font-weight: 100;
 }
-.intro-text p {
-    font-size: 15px;
+p {
     padding:10px 0px 10px 0px;
+}
+.header-text h1{
+    font-size: 35px;
+    font-weight: bold;
 }
 .centre-align-text{
     
@@ -144,7 +152,7 @@ button{
   .service-intro .cta{
       padding: 50px 0px 50px 0px;
   }
-  .about {
+  .about-us {
       margin-top: 30px;
       flex-direction: column;
       align-items: unset;
@@ -171,7 +179,7 @@ button{
   } 
   footer{
     margin-top: 50px;
-    height: 20vh;
+    height: 35vh;
     width: 100%;
     background-color: rgba(0, 0, 255, 0.687);
   }
@@ -188,4 +196,103 @@ button{
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+  }
+
+  /**
+  About Section Styles
+  **/
+
+  .header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    color: #fff;
+    background-color: rgba(0, 0, 255, 0.687);
+  }
+
+  .medium-text-sec{
+      flex:2;
+  
+  }
+  .small-text-sec{
+      flex:1;
+  }
+  .small-medium-sec{
+    flex: 1.5;
+  }
+  .center-text-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 72%;
+    margin: auto;
+  }
+  section{
+    padding: 40px 0px 40px 0px;
+  }
+.about-content p {
+    padding: 0px 0px 10px 0px;
+}
+.mission,.values,.vision{
+    flex:1;
+    justify-content: center;
+    align-items: center;
+}
+.company-values{
+    align-items: end;
+}
+.sec-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 0px 0px 0px;
+}
+.sec-content ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec-content ul li,.small-text-sec ul li{
+    padding:5px 0px 0px 0px;
+}
+.align-items-start{
+    align-items: start !important;
+}
+  /**
+  Footer
+  **/
+
+  .footer-container{
+    color: #fff;
+    align-items: unset;
+    padding-top: 20px;
+  }
+  .footer-logo,.footer-company-container,.contact-information{
+      flex:1;
+      margin: 20px 0px 10px 0px;
+  }
+  .footer-company-container .footer-links li a{
+      color:#fff;
+      text-decoration: none;
+  }
+  .footer-header{
+    border-bottom: 1px solid #fff;
+    width: fit-content;
+  }
+  .footer-links{
+      padding:10px 0px 0px 0px;
+  }
+  .footer-links li{
+      padding: 0px 0px 5px 0px; 
+  }
+  
+
+  .full-width{
+      width: 100%;
+  }
+  .margin-left-25{
+    margin-right: 25px;
   }
