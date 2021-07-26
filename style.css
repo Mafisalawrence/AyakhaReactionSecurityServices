@@ -42,6 +42,9 @@ h3{
     font-size: 18px;
     color:#5f5f79;
 }
+.nav-link:hover{
+    border-bottom: 1px solid #5f5f79;
+}
 .logo-container{
   flex: 1;
 }
@@ -54,9 +57,6 @@ section, .footer-container{
     margin: auto;
     align-items: center;
 }
-.service-intro{
-    flex-direction: column;
-}
 .cover {
     min-height: 90vh;
     background-position: right;
@@ -66,9 +66,6 @@ section, .footer-container{
 .cover{
     flex: 1;
 }
-.intro-text{
-    border-bottom: 2px solid rgba(0, 0, 255, 0.687);
-}
 h1{
     font-size: 55px;
     font-weight: bold;
@@ -76,14 +73,6 @@ h1{
  h2{
     font-size: 45px;
     font-weight: bold;
-}
-.intro-text h3{
-    font-size: 35px;
-    font-weight: 300;
-}
-.service-card h4{
-    font-size: 18px;
-    font-weight: 100;
 }
 p {
     padding:10px 0px 10px 0px;
@@ -136,6 +125,8 @@ button{
     width: 80%;
     margin: auto;
     box-shadow: 6px 8px 15px #ededed;
+    border-left: 2px solid rgba(0, 0, 255, 0.687);
+    transition: transform .2s;
 }
 .row {
     display: flex;
@@ -149,47 +140,15 @@ button{
     flex-basis: 100%;
     flex: 1;
   }
-  .service-intro .cta{
-      padding: 50px 0px 50px 0px;
-  }
-  .about-us {
-      margin-top: 30px;
-      flex-direction: column;
-      align-items: unset;
-      gap: 30px;
-  }
-  .about-section{
+  .h-section{
     background-color: #fbfbfb;
   }
-  .about-introduction{
-      display: flex;
-  }
-  .about-text{
-    background-color: rgba(0, 0, 255, 0.687);
-    padding: 25px;
-    color: #fff;
-  }
-  .about-introduction .introduction {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 50px 0px 50px 0px;
-    background: #e7f9ff;
-  } 
+
   footer{
     margin-top: 50px;
     height: 35vh;
     width: 100%;
     background-color: rgba(0, 0, 255, 0.687);
-  }
-  .services {
-    margin-top: 45px;
-    background: linear-gradient(to bottom, #e7f9ff 0%,#e7f9ff 40%,#fbfbfb 30%,#fbfbfb 50%,#fbfbfb 100%);
-    padding: 15px 0px 15px 0px;
-  }
-  .services-content{
-    flex-direction: column;
   }
   .service-card-text{
     display: flex;
@@ -256,7 +215,7 @@ button{
     align-items: center;
 }
 .sec-content ul li,.small-text-sec ul li{
-    padding:5px 0px 0px 0px;
+    padding:20px 0px 0px 0px;
 }
 .align-items-start{
     align-items: start !important;
@@ -288,6 +247,14 @@ button{
   .footer-links li{
       padding: 0px 0px 5px 0px; 
   }
+  .icon-list-item{
+    display: flex;
+    gap: 10px;
+    padding: 10px 0px 0px 0px;
+  }
+  .icon-list-item .fas{
+    padding: 3px 0px 0px 0px;
+  }
   
 
   .full-width{
@@ -296,3 +263,23 @@ button{
   .margin-left-25{
     margin-right: 25px;
   }
+  .margin-right-25{
+    margin-left: 25px;
+  }
+  .no-margin-top-bottom{
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+  }
+button .fas{
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.service-card:hover{
+    background-color: rgba(0, 0, 255, 0.687);
+    color:#fff;
+    transform: scale(1.02);
+}
+button:hover{
+    background-color: rgba(54, 54, 251, 0.687);
+}
