@@ -3,6 +3,13 @@
     padding: 0px;
     box-sizing: border-box;
 }
+:root {
+    --primary: #30348c;
+    --primary-hover:#484b94;
+    --accent:#208ccc;
+    --white: #ffffff;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -11,8 +18,9 @@ header {
     width: 100%;
     height: 10vh;
     position: fixed;
-    background-color: #FFF;
+    background-color:var(--white);
     box-shadow: 0 1px 6px 0 rgb(0 0 0 / 15%);
+    z-index: 1;
 }
 .nav-container{
     display: flex;
@@ -34,6 +42,56 @@ h3{
     font-size: 1.85714286em;
     font-weight: 700;
 }
+.logo-img{
+    background-image: url(./img/Ayakha-Logo.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 90%;
+    height: 100%;
+    flex: 1;
+}
+.team-img{
+    background-image: url(./img/ayakha-7.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 90%;
+    height: 100%;
+}
+.sec-height{
+    height:50vh;
+}
+.prod-img{
+    background: url(./img/ayakha-5.PNG) var(--accent);
+    background-blend-mode: color-burn;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 90%;
+    height: 100%;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--white)
+}
+.c-card{
+    padding: 20px 0px 20px 30px !important;
+    width: 30%;
+    align-items: center;
+    background-color: var(--accent);
+    color: var(--white);
+    gap: 35px;
+    margin-bottom: 30px;
+}
+.c-card .span{
+    font-size: 17px;
+}
+.logo{
+    text-transform: uppercase;
+    flex: 4;
+}
 .nav-links{
     justify-content: space-around;
 }
@@ -46,7 +104,11 @@ h3{
     border-bottom: 1px solid #5f5f79;
 }
 .logo-container{
-  flex: 1;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
 }
 .logo-container,.nav-links{
     display: flex;
@@ -94,28 +156,19 @@ button{
 
 }
 .cta{
-    padding:50px 0px 0px 0px;   
+    padding:50px 0px 50px 0px;   
 }
 .cta button{
     border: none;
-    background-color: rgba(0, 0, 255, 0.687);
-    color: #fff;
+    background-color: var(--primary);
+    color: var(--white);
 
 }
-.cta-outline button{
-    border:1px solid rgba(0, 0, 255, 0.687);
-    color:rgba(0, 0, 255, 0.687);
-    background-color: #fff;
-}
 .about-services{
-    display: flex;
-    flex-direction: column;
     padding: 40px 0px 40px 0px;
-    gap: 30px;
-    width: 100%;
 }
 .service-card{
-    background: #fff;
+    background: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,7 +178,7 @@ button{
     width: 80%;
     margin: auto;
     box-shadow: 6px 8px 15px #ededed;
-    border-left: 2px solid rgba(0, 0, 255, 0.687);
+    border-left: 2px solid var(--primary);
     transition: transform .2s;
 }
 .row {
@@ -143,12 +196,15 @@ button{
   .h-section{
     background-color: #fbfbfb;
   }
-
+  .h-section-a{
+    background-color:var(--accent);
+    color:var(--white);
+  }
   footer{
     margin-top: 50px;
     height: 35vh;
     width: 100%;
-    background-color: rgba(0, 0, 255, 0.687);
+    background-color: var(--primary);
   }
   .service-card-text{
     display: flex;
@@ -167,8 +223,8 @@ button{
     justify-content: center;
     align-items: center;
     height: 30vh;
-    color: #fff;
-    background-color: rgba(0, 0, 255, 0.687);
+    color: var(--white);
+    background-color: var(--primary);
   }
 
   .medium-text-sec{
@@ -225,20 +281,21 @@ button{
   **/
 
   .footer-container{
-    color: #fff;
+    color: var(--white);
     align-items: unset;
     padding-top: 20px;
+    gap: 10px;
   }
   .footer-logo,.footer-company-container,.contact-information{
       flex:1;
       margin: 20px 0px 10px 0px;
   }
   .footer-company-container .footer-links li a{
-      color:#fff;
+      color:var(--white);
       text-decoration: none;
   }
   .footer-header{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--primary);
     width: fit-content;
   }
   .footer-links{
@@ -256,7 +313,9 @@ button{
     padding: 3px 0px 0px 0px;
   }
   
-
+  .full-height{
+      height: 100%;
+  }
   .full-width{
       width: 100%;
   }
@@ -276,10 +335,87 @@ button .fas{
 }
 
 .service-card:hover{
-    background-color: rgba(0, 0, 255, 0.687);
-    color:#fff;
+    background-color: var(--primary);
+    color:var(--white);
     transform: scale(1.02);
 }
 button:hover{
-    background-color: rgba(54, 54, 251, 0.687);
+    background-color: var(--primary-hover);
+}
+.nav-active{
+    transform: translateX(0%) !important;
+}
+
+
+@media screen and (max-width: 1356px){
+
+    .nav-links{
+        position: absolute;
+        right: 0;
+        background: var(--primary);
+        flex-direction: column;
+        width: 50%;
+        height: 90vh;
+        top: 10vh;
+        align-items: center;
+        color: var(--white);
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .line{
+        width: 30px;
+        height:3px;
+        background: #000;
+        margin: 5px;
+    }
+    .hamburger{
+        display: ;
+        position:absolute;
+        cursor:pointer;
+        right:5%;
+        top:50%;
+        transform: translate(-5%,-50%);
+    }
+    .nav-link{
+        color:var(--white);
+    }
+    .cover{
+        display: none;
+    }
+    section, .row,.footer-container{
+        flex-direction: column;
+    }
+    .h-section, .h-section-a{
+        padding: 30px;
+    }
+    .cta{
+        align-items: center;
+    justify-content: center;
+    display: flex;
+    }
+    .logo{
+        display: none;
+    }
+    .company-values .mission,
+    .company-values .values,
+    .innovation
+    {
+        margin-bottom: 20px !important;
+    }
+    .margin-left-25 {
+        margin-right: auto;
+    }
+    .sec-height{
+        height: unset;
+    }
+    .prod-img{
+        background: unset;
+        color: #000;
+    }
+    .c-card{
+        width: 70%;
+    }
+    footer{
+        height: 60vh;
+    }
 }
