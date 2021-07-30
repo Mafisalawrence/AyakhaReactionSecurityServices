@@ -20,7 +20,7 @@ header {
     position: fixed;
     background-color:var(--white);
     box-shadow: 0 1px 6px 0 rgb(0 0 0 / 15%);
-    z-index: 1;
+    z-index: 3;
 }
 .nav-container{
     display: flex;
@@ -42,6 +42,7 @@ h3{
     font-size: 1.85714286em;
     font-weight: 700;
 }
+
 .logo-img{
     background-image: url(./img/Ayakha-Logo.PNG);
     background-repeat: no-repeat;
@@ -63,8 +64,20 @@ h3{
     height:50vh;
 }
 .prod-img{
-    background: url(./img/ayakha-5.PNG) var(--accent);
-    background-blend-mode: color-burn;
+    background: url(./img/IMG-20210729-WA0000-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 90%;
+    height: 100%;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--white)
+}
+.serv-img{
+    background: url(./img/IMG-20210729-WA0003.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -78,7 +91,7 @@ h3{
 }
 .c-card{
     padding: 20px 0px 20px 30px !important;
-    width: 30%;
+    width: 80%;
     align-items: center;
     background-color: var(--accent);
     color: var(--white);
@@ -121,12 +134,14 @@ section, .footer-container{
 }
 .cover {
     min-height: 90vh;
-    background-position: right;
-    background-image: url(./blob.svg);
+    background-position: bottom;
+    background-image: url(./img/background-blob.svg);
     background-repeat: no-repeat;
-}
-.cover{
+    background-size: contain;
     flex: 1;
+}
+.small-medium-sec h1, .small-medium-sec h2{
+    color:var(--white)
 }
 h1{
     font-size: 55px;
@@ -155,7 +170,11 @@ button{
     font-size: 16px;
 
 }
-.cta{
+.sec-img img{
+    width: 90%;
+    margin: auto;
+}
+.cta, .cta-outline{
     padding:50px 0px 50px 0px;   
 }
 .cta button{
@@ -163,6 +182,50 @@ button{
     background-color: var(--primary);
     color: var(--white);
 
+}
+.cta-outline button{
+    background-color: var(--white);
+    color: var(--primary);
+}
+.index-sec{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-bottom:0px;
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(
+        90deg
+        , var(--primary) 0%, rgb(29 29 160) 35%, rgba(0,212,255,1) 100%);
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    margin: 10px auto auto;
+    right: 0;
+
+}
+.wave{
+    background: url(./img/blob.svg);
+    height: 49%;
+    width: 100%;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+}
+.medium-text-sec img{
+    width: 80%;
+    float: right;
+    background-image: url(./img/background-blob.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 .about-services{
     padding: 40px 0px 40px 0px;
