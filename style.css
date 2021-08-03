@@ -190,14 +190,13 @@ button{
 .index-sec{
     display: flex;
     flex-direction: column;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin: 0px 0px auto 0px;
     padding-bottom:0px;
     width: 100%;
     height: 90vh;
-    background: linear-gradient(
-        90deg
-        , var(--primary) 0%, rgb(29 29 160) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient( 
+        253deg
+         , var(--primary) 0%, rgb(29 29 160) 35%, rgba(0,212,255,1) 100%);
 }
 .home{
     display: flex;
@@ -205,7 +204,6 @@ button{
     width: 90%;
     align-items: center;
     margin: auto;
-    margin: 10px auto auto;
     right: 0;
 
 }
@@ -220,7 +218,7 @@ button{
     bottom: 0;
 }
 .medium-text-sec img{
-    width: 80%;
+    width: 100%;
     float: right;
     background-image: url(./img/background-blob.svg);
     background-repeat: no-repeat;
@@ -262,6 +260,7 @@ button{
   .h-section-a{
     background-color:var(--accent);
     color:var(--white);
+    padding: 30px;
   }
   footer{
     margin-top: 50px;
@@ -286,8 +285,11 @@ button{
     justify-content: center;
     align-items: center;
     height: 30vh;
+    margin-top: 0px;
     color: var(--white);
-    background-color: var(--primary);
+    background: linear-gradient( 
+        253deg
+         , var(--primary) 0%, rgb(29 29 160) 35%, rgba(0,212,255,1) 100%);
   }
 
   .medium-text-sec{
@@ -309,7 +311,7 @@ button{
     margin: auto;
   }
   section{
-    padding: 40px 0px 40px 0px;
+    margin: 40px auto 40px auto;
   }
 .about-content p {
     padding: 0px 0px 10px 0px;
@@ -408,16 +410,38 @@ button:hover{
 .nav-active{
     transform: translateX(0%) !important;
 }
+input[type=text],input[type=email], select, textarea {
+    width:50%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
 
 
 @media screen and (max-width: 1356px){
 
+
+    .sec-img img{
+        width: 100%;
+    }
+    .home{
+        width: 75%;
+    }
     .nav-links{
         position: absolute;
         right: 0;
         background: var(--primary);
         flex-direction: column;
-        width: 50%;
+        width: 100%;
         height: 90vh;
         top: 10vh;
         align-items: center;
@@ -441,9 +465,6 @@ button:hover{
     }
     .nav-link{
         color:var(--white);
-    }
-    .cover{
-        display: none;
     }
     section, .row,.footer-container{
         flex-direction: column;
@@ -480,5 +501,8 @@ button:hover{
     }
     footer{
         height: 60vh;
+    }
+    .index-sec .medium-text-sec{
+        display: none;
     }
 }

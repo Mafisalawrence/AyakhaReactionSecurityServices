@@ -10,10 +10,32 @@
     <link rel="stylesheet" href="../css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $('#submit-button').click(function (e) {
+            e.preventDefault();
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var message = $('#message').val();
+            $.ajax
+              ({
+                type: "POST",
+                url: "../mail-handler.php",
+                data: { "name": name, "email": email, "message": message },
+                success: function (data) {
+                  $('.result').html(data);
+                  $('#contactform')[0].reset();
+                }
+              });
+          });
+        });
+      </script>
     <title>Contact</title>
 </head>
 
 <body>
+
     <header>
         <div class="nav-container">
             <div class="logo-container">
@@ -45,7 +67,7 @@
         </section>
 
         <section>
-            <div class="small-text-sec">
+            <div class="medium-text-sec">
                 <div class="icon-list-item c-card">
                 <i class="fas fa-3x fa-phone-alt"></i><span>083 731 0471</span>
               </div>
@@ -57,21 +79,22 @@
               </div>
             </div>
             <div class="medium-text-sec">
-                <form action="">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="nmae">
+                <form method="post" action="" id="contactform">  
+                    <label for="contactName">Name</label>
+                    <input type="text" name="name" id="contactName">
 
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
+                    <label for="contactEmail">Email</label>
+                    <input type="email" name="email" id="contactEmail">
 
-                    <label for="message">Message</label>
-                    <input type="text" name="message" id="message">
+                    <label for="contactMessage">Message</label>
+                    <textarea name="message" id="contactMessage" cols="30" rows="10"></textarea>
                     <div class="cta">
-                        <button class="readmore">Send<i class="fas fa-arrow-right"></i></button>
+                        <button id="submit-button">Send</button>  
                     </div>
                 </form>
             </div>
-
+            <div class="result">
+            </div>
         </section>
     </main>
     <footer>
