@@ -411,8 +411,8 @@ form{
         background: var(--primary);
         flex-direction: column;
         width: 100%;
-        height: 90vh;
-        top: 10vh;
+        height: 85vh;
+        top: 15vh;
         align-items: center;
         color: var(--white);
         transform: translateX(100%);
