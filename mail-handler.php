@@ -10,10 +10,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = "Ayakha Security Reaction Services Contact Submission"
     $headers = "From: ".$email. "\r\n" .
    // mail($companyMail,"$subject",$message,$headers);
-
-    echo "Name : ".$name."</br>";
-    echo "Email : ".$email."</br>";
-    echo "Message : ".$message."</br>";
+   echo "Name : ".$name."</br>";
+   echo "Email : ".$email."</br>";
+   echo "Message : ".$message."</br>";
+   //header("Location: http://www.google.com/");
 }
 function test_input($data) {
   $data = trim($data);

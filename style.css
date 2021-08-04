@@ -113,7 +113,7 @@ h1{
     font-weight: bold;
 }
  h2{
-    font-size: 45px;
+    font-size: 50px;
     font-weight: bold;
 }
 p {
@@ -166,10 +166,9 @@ button{
 .home{
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 93%;
     height: 100%;
     align-items: center;
-    /* margin: auto; */
     right: 0;
     background: url(./img/IMG-20210729-WA0005-removebg-preview.png);
     background-position: inherit;
@@ -178,14 +177,6 @@ button{
     background-position: right;
 
 }
-/* .medium-text-sec img{
-    width: 100%;
-    float: right;
-    background-image: url(./img/background-blob.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-} */
 .service-card{
     background: var(--white);
     display: flex;
@@ -394,7 +385,9 @@ form{
 
 @media screen and (max-width: 1356px){
 
-
+    h2 {
+     font-size: 45px;
+    }
     .logo-img{
     background-position: left;
     }
