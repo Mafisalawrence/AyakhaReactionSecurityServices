@@ -389,6 +389,7 @@ form{
 
 @media screen and (max-width: 1356px){
 
+
     .logo-img{
     background-position: left;
     }
@@ -441,7 +442,7 @@ form{
         padding: 30px;
     }
     .cta{
-        align-items: center;
+    align-items: center;
     justify-content: center;
     display: flex;
     }
@@ -462,5 +463,18 @@ form{
     }
     .index-sec .medium-text-sec{
         display: none;
+    }
+    .index-sec{
+        background-image: url(./img/Ayakha-4-removebg-preview.png);
+        background-position: inherit;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .small-medium-sec h1, .small-medium-sec h2{
+        color:#000;
+    }
+    .cta-outline button{
+        background-color: var(--primary);
+        color: var(--white);
     }
 }
