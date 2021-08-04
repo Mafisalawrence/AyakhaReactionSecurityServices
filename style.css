@@ -406,6 +406,7 @@ button .fas{
 }
 button:hover{
     background-color: var(--primary-hover);
+    color:var(--white)
 }
 .nav-active{
     transform: translateX(0%) !important;
