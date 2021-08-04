@@ -9,7 +9,10 @@
     --accent:#208ccc;
     --white: #ffffff;
 }
-
+main{
+    display: flex;
+    flex-direction: column;
+}
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -52,45 +55,8 @@ h3{
     height: 100%;
     flex: 1;
 }
-.team-img{
-    background-image: url(./img/ayakha-7.PNG);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 90%;
-    height: 100%;
-}
-.sec-height{
-    height:50vh;
-}
-.prod-img{
-    background: url(./img/IMG-20210729-WA0000-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 90%;
-    height: 100%;
-    opacity: 0.7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:var(--white)
-}
-.serv-img{
-    background: url(./img/IMG-20210729-WA0003.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 90%;
-    height: 100%;
-    opacity: 0.7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:var(--white)
-}
 .c-card{
-    padding: 20px 0px 20px 30px !important;
+    padding: 20px 20px 20px 30px !important;
     width: 80%;
     align-items: center;
     background-color: var(--accent);
@@ -207,16 +173,6 @@ button{
     right: 0;
 
 }
-.wave{
-    background: url(./img/blob.svg);
-    height: 49%;
-    width: 100%;
-    z-index: 2;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    bottom: 0;
-}
 .medium-text-sec img{
     width: 100%;
     float: right;
@@ -224,9 +180,6 @@ button{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-}
-.about-services{
-    padding: 40px 0px 40px 0px;
 }
 .service-card{
     background: var(--white);
@@ -236,8 +189,7 @@ button{
     align-items: center;
     gap: 20px;
     padding: 50px;
-    width: 80%;
-    margin: auto;
+    width: 100%;
     box-shadow: 6px 8px 15px #ededed;
     border-left: 2px solid var(--primary);
     transition: transform .2s;
@@ -247,6 +199,7 @@ button{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    gap:30px;
   }
   .column {
     display: flex;
@@ -254,13 +207,16 @@ button{
     flex-basis: 100%;
     flex: 1;
   }
+  .e-section, .h-section ,.h-section-a{
+    padding: 30px;
+  }
   .h-section{
     background-color: #fbfbfb;
+  
   }
   .h-section-a{
     background-color:var(--accent);
     color:var(--white);
-    padding: 30px;
   }
   footer{
     margin-top: 50px;
@@ -412,8 +368,8 @@ button:hover{
     transform: translateX(0%) !important;
 }
 input[type=text],input[type=email], select, textarea {
-    width:50%; 
-    padding: 12px; 
+    width:100%; 
+    padding: 18px; 
     border: 1px solid #ccc; 
     border-radius: 4px; 
     box-sizing: border-box; 
@@ -421,16 +377,27 @@ input[type=text],input[type=email], select, textarea {
     margin-bottom: 16px; 
     resize: vertical 
   }
+  
 form{
     display: flex;
     flex-direction: column;
     
 }
-
+.sec-header{
+    padding: 30px 0px 30px 0px;
+}
 
 @media screen and (max-width: 1356px){
 
-
+    .logo-img{
+    background-position: left;
+    }
+    .c-card{
+        width: 100%;
+    }
+    .sec-content{
+        padding: 0px;
+    }
     .sec-img img{
         width: 100%;
     }
@@ -489,16 +456,6 @@ form{
     }
     .margin-left-25 {
         margin-right: auto;
-    }
-    .sec-height{
-        height: unset;
-    }
-    .prod-img{
-        background: unset;
-        color: #000;
-    }
-    .c-card{
-        width: 70%;
     }
     footer{
         height: 60vh;

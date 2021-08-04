@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../app.js"></script>
+ 
     <script>
         $(document).ready(function () {
           $('#submit-button').click(function (e) {
@@ -67,7 +67,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="e-section">
             <div class="medium-text-sec">
                 <div class="icon-list-item c-card">
                 <i class="fas fa-3x fa-phone-alt"></i><span>083 731 0471</span>
@@ -80,15 +80,18 @@
               </div>
             </div>
             <div class="medium-text-sec">
+                <div class="sec-header">
+                    <h3 class="centre-align-text">Contact Us</h3>
+                </div>
                 <form method="post" action="" id="contactform">  
                     <label for="contactName">Name</label>
-                    <input type="text" name="name" id="contactName">
+                    <input type="text" name="name" id="contactName" placeholder="Your name">
 
                     <label for="contactEmail">Email</label>
-                    <input type="email" name="email" id="contactEmail">
+                    <input type="email" name="email" id="contactEmail" placeholder="Your email">
 
                     <label for="contactMessage">Message</label>
-                    <textarea name="message" id="contactMessage" cols="30" rows="10"></textarea>
+                    <textarea name="message" id="contactMessage" cols="30" rows="10" placeholder="Type message here"></textarea>
                     <div class="cta">
                         <button id="submit-button">Send</button>  
                     </div>
@@ -132,7 +135,7 @@
                 </ul>
             </div>
         </div>
-     
+        <script src="../app.js"></script>
 </body>
 
 </html>
