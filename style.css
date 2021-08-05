@@ -219,12 +219,41 @@ button{
     height: 35vh;
     width: 100%;
     background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
   }
   .service-card-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+  }
+  .copy-right{
+      text-align: center;
+      color:var(--white);
+      font-size: 11px;
+  }
+  .required{
+      color:red
+  }
+
+  .thank-you-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .blob-container{
+      background: url(./img/ThankYou.svg);
+      background: url(./img/ThankYou.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 82%;
+    width: 100%;
+
   }
 
   /**
