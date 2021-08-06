@@ -255,11 +255,26 @@ button{
     width: 100%;
 
   }
-
+  
   /**
   About Section Styles
   **/
+.about-services{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.about-services .prod-img{
+    flex:1;
+}
 
+.prod-img img{
+    width: 100%;
+}
+.about-services .prod-items{
+    flex:1;
+    gap: 60px;
+}
   .header{
     display: flex;
     width: 100%;
@@ -508,5 +523,11 @@ form{
     .cta-outline button{
         background-color: var(--primary);
         color: var(--white);
+    }
+    .about-services .prod-img {
+        display: none;
+    }
+    .about-services .prod-items{
+        gap:30px;
     }
 }
