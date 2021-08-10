@@ -190,6 +190,10 @@ button{
     border-left: 2px solid var(--primary);
     transition: transform .2s;
 }
+.column .service-card{
+    background-color: var(--primary);
+    color:var(--white);
+}
 .row {
     display: flex;
     flex-direction: row;
@@ -317,9 +321,10 @@ button{
     justify-content: center;
     align-items: center;
 }
-.company-values{
+/* .company-values{
     align-items: end;
-}
+    height: 60vh;
+} */
 .sec-content{
     display: flex;
     flex-direction: column;
@@ -395,11 +400,6 @@ button .fas{
     margin-left: 20px;
 }
 
-.service-card:hover{
-    background-color: var(--primary);
-    color:var(--white);
-    transform: scale(1.02);
-}
 button:hover{
     background-color: var(--primary-hover);
     color:var(--white)
@@ -425,6 +425,15 @@ form{
 }
 .sec-header{
     padding: 30px 0px 30px 0px;
+}
+.company-values{
+    gap:20px;
+}
+.company-values .mission,
+.company-values .values,
+.company-values .vision
+{
+
 }
 
 @media screen and (max-width: 1356px){
@@ -493,12 +502,13 @@ form{
     .logo{
         display: none;
     }
-    .company-values .mission,
+    /* .company-values .mission,
     .company-values .values,
     .innovation
     {
+       
         margin-bottom: 20px !important;
-    }
+    } */
     .index-sec .margin-left-25 {
         margin-right: 0px;
     }
