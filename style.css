@@ -163,6 +163,9 @@ button{
         253deg
          , var(--primary) 0%, rgb(29 29 160) 35%, rgba(0,212,255,1) 100%);
 }
+.float-right{
+    float:right !important;
+}
 .home{
     display: flex;
     flex-direction: row;
@@ -178,7 +181,7 @@ button{
 
 }
 .service-card{
-    background: var(--white);
+    background: var(--accent);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,13 +190,11 @@ button{
     padding: 50px;
     width: 100%;
     box-shadow: 6px 8px 15px #ededed;
-    border-left: 2px solid var(--primary);
+    border-left: 4px solid var(--primary);
     transition: transform .2s;
-}
-.column .service-card{
-    background-color: var(--primary);
     color:var(--white);
 }
+
 .row {
     display: flex;
     flex-direction: row;
@@ -321,10 +322,10 @@ button{
     justify-content: center;
     align-items: center;
 }
-/* .company-values{
-    align-items: end;
-    height: 60vh;
-} */
+.company-values .full-width{
+    width: 70%;
+    height: 100%;
+}
 .sec-content{
     display: flex;
     flex-direction: column;
@@ -539,5 +540,8 @@ form{
     }
     .about-services .prod-items{
         gap:30px;
+    }
+    .company-values .full-width{
+        display: none;
     }
 }
