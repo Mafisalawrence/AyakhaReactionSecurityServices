@@ -143,6 +143,7 @@ p {
   width: 100%;
   background-position: right;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 .centre-align-text{
     
@@ -557,5 +558,8 @@ form{
     }
     .company-values .full-width{
         display: none;
+    }
+    .header-text{
+        background-position: center;
     }
 }
