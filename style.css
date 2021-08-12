@@ -27,11 +27,11 @@ body{
 header {
     width: 100%;
     height: 15vh;
-    position: fixed;
-    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 15%);
+    position: fixed;   
 }
 .nav-active{
     background: var(--white);
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 15%);
 }
 .nav-container{
     display: flex;
@@ -448,12 +448,6 @@ form{
 }
 .company-values{
     gap:20px;
-}
-.company-values .mission,
-.company-values .values,
-.company-values .vision
-{
-
 }
 
 @media screen and (max-width: 1356px){
