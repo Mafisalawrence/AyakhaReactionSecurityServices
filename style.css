@@ -511,13 +511,9 @@ form{
     .logo{
         display: none;
     }
-    /* .company-values .mission,
-    .company-values .values,
-    .innovation
-    {
-       
-        margin-bottom: 20px !important;
-    } */
+    .background{
+        background: none;
+    }
     .index-sec .margin-left-25 {
         margin-right: 0px;
     }
